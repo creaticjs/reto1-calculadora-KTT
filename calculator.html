@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- image and form -->
+    <section id="image-form" class="col-md-10 offset-md-1">
+        <div class="container-fluid">
+            <div class="row">            
+                <div class="col-xs-12 col-md-12 col-lg-6 pl-0 pr-0">
+                  <img src="calcu4.png" alt="calculator-image" />
+                </div>
+
+                <div id="form1" class="col text-center mt-4 pb-4">
+                   <div class="container">
+                        <div class="row mt-4">
+                            <div class="col text-center">
+                                <h3>Calculadora</h3>
+                            </div>
+                        </div>
+                        <div id="result" class="col text-center col-md-8 offset-md-2 mb-2 mt-2 pt-0">
+                            <div id="total-result" class="pt-0 mt-0">
+                                <h4 id="total-result"></h4>
+                            </div>
+                            <div id="input">
+                                <h4 id="input"></h4>
+                            </div>
+                        </div>
+                        <div id="keyboard">
+                            <button class="operator btn" id="clear_all">C</button>
+                            <button class="operator btn" id="delete_last">CE</button>
+                            <button class="number btn" id="0">0</button>
+                            <button class="operator btn btn-success" id="/">/</button>
+                            <br>
+                            <button class="number btn" id="7">7</button>
+                            <button class="number btn" id="8">8</button>
+                            <button class="number btn" id="9">9</button>
+                            <button class="operator btn btn-info" id="*">x</button>
+                            <br>
+                            <button class="number btn" id="4">4</button>
+                            <button class="number btn" id="5">5</button>
+                            <button class="number btn" id="6">6</button>
+                            <button class="operator btn btn-warning" id="-">-</button>
+                            <br>
+                            <button class="number btn" id="1">1</button>
+                            <button class="number btn" id="2">2</button>
+                            <button class="number btn" id="3">3</button>
+                            <button class="operator btn btn-danger" id="+">+</button>
+                            <br>       
+                            <button class="operator btn btn-primary equal" id="=">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+          <!-- /image and form-->
+    
+    <!--  Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+#image-form {    
+    margin-top: 3em;
+    margin-bottom: 3em;
+    color: white;
+  }
+
+  #form1{
+    background-color: rgba(15, 16, 15, 0.89);
+    margin-top: 0 !important;
+  }
+  
+  #image-form img {
+    max-width: 100%; 
+    height: 100%;
+  }
+
+.operator, .number{
+	width: 50px;
+	height: 50px;
+	margin: 0.5em;
+	border-radius: 20%;
+	border-width: 0;
+	font-weight: bold;
+    font-size: 18px;
+}
+
+.number {
+    background: white;
+}
+
+.equal{
+    width: 100px !important;
+    border-radius: 10% !important;
+}
+
+#result{
+    height: 5em;
+    padding:5px;
+    background-color: rgba(15, 16, 15, 0.89);
+}
+#total-result{
+	text-align: right;
+	height: 20px;
+	margin: 0 10px;
+	padding-top: 10px;
+	font-size: 25px;
+	color: #929292;
+}
+#input{
+	text-align: right;
+	height: 20px;
+	margin: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
+
+/* media queries */
+@media screen and (max-width: 320px) {
+    .operator, .number{
+        width: 35px;
+        height: 35px;
+        margin: 0.3em;
+        font-size: 15px;
+    }
+    #image-form img {
+        height: 50vh;
+      }  
+}
