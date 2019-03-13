@@ -12,24 +12,13 @@ function getInput(){
 	return document.getElementById("input").innerText;
 }
 function setInput(num){
-	if(num==""){
-		document.getElementById("input").innerText=num;
-	}
-	else{
-		document.getElementById("input").innerText=FormatNumber(num);
-	}	
-}
-
-function FormatNumber(num){
-	var n = Number(num);
-	var value = n.toString();
-	return value;
+	document.getElementById("input").innerText=num;
 }
 
 /* numbers code*/
 for(var i =0;i<number.length;i++){
 	number[i].addEventListener('click',function(){
-		var input=FormatNumber(getInput());
+		var input=getInput();
 		if(input!=NaN){ 
 			input=input+this.id;
 			setInput(input);
@@ -45,7 +34,7 @@ for(var i =0; i<operator.length; i++){
 			setInput("");
 		}
 		else if(this.id=="delete_last"){
-			var input=FormatNumber(getInput());
+			var input=getInput();
 			if(input){
 				input= input.substr(0,input.length-1);
 				setInput(input);
@@ -56,7 +45,7 @@ for(var i =0; i<operator.length; i++){
 			var memory=getTotalResult();
 			
 			if(input!="" || memory!=""){
-				input= input==""?input:FormatNumber(input);
+
 				memory=memory+input;
 				if(this.id=="="){
 					var result=eval(memory);
@@ -69,8 +58,7 @@ for(var i =0; i<operator.length; i++){
 					setInput("");
 				}
 			}
-		}
-		
+		}		
 	});
 }
 
