@@ -18,9 +18,14 @@ function setInput(num){
 /* numbers code*/
 for(var i =0;i<number.length;i++){
 	number[i].addEventListener('click',function(){
+		disable=false;
 		var input=getInput();
 		if(input!=NaN){ 
 			input=input+this.id;
+			if(this.id=="." && disable==false){
+				disable=true;
+				document.getElementById(".").disabled=true;
+			}
 			setInput(input);
         }
 	});
@@ -29,6 +34,9 @@ for(var i =0;i<number.length;i++){
 /* operators code*/
 for(var i =0; i<operator.length; i++){
 	operator[i].addEventListener('click',function(){
+
+		document.getElementById(".").disabled = false;
+
 		if(this.id=="clear_all"){
 			setTotalResult("");
 			setInput("");
