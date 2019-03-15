@@ -55,14 +55,28 @@
 }
 
 /* media queries */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .operator, .number{
-        width: 35px;
-        height: 35px;
+       	width: 45px;
+        height: 45px;
         margin: 0.3em;
-        font-size: 15px;
+        font-size: 18px;
+        
     }
     #image-form img {
         height: 50vh;
-      }  
+    }  
+}
+
+@media screen and (max-width: 320px) {
+	.operator, .number{
+    	width: 40px;
+        height: 40px;
+        margin: 0.2em;
+        font-size: 15px;
+       
+    }
+    #image-form img {
+        height: 50vh;
+    }  
 }
